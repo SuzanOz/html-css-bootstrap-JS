@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suzan Ozkilic</title>
+<!--Linking font awesome to the framework-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Adding ubuntu google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- We want to use external file
+We need to import that path to index.html -->
+<link rel="stylesheet" href="bootstrap.css">
+<!-- When I use same bootstrap class name in my-style.css
+It will overwrite bottstap class
+This make us modify the bootstrap classes -->
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+<script src="bootstrap.js"></script>
+<script>
+    function aboutWindow() {
+      var myWindow = window.open("about.html", "_self");
+    }
+    </script>
+</head>
+<body class="body bg-yellow ">
+    
+    <div class="container text-light top-part-space">
+        <section id="topmenu">
+        <nav class="navbar navbar-expand-lg navbar-light right-to-left-gradient ">
+                    <a class="navbar-brand" href="#">Suzan Ozkilic</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a onclick="aboutWindow()">About</a>
+                            
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#reach">Reach</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                      </div>
+                    </div>
+        </nav>
+    </section>
+        <section id="hobbies">
+            <div class="container text-dark text-center right-to-left-gradient">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 bg-cream">
+                    <h1>My Hobbies</h1>
+                    <p> There are two activities that I am fond of, biking and planting. 
+                        My mother is my first planting teacher, and she was excellent at planting. 
+                        Planting is a meditative  activity and embracing it has greatly enhanced my levels 
+                        of concentration. <br><br>I also love biking with my family besides planting. 
+                        Through them, I achieve balance and I thoroughly enjoy my 'family time'.</p>
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 l-padding">
+                    <img  class = "img-me " src="images/bike-with-flowers.jpg" alt="">
+                  
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <footer class="text-muted">
+              <div class="container-fluid ml-1 ">
+                <p class="float-left ">
+                  2020- This page is designed by Susan Ozkilic for TechProEducation
+                  bootcamp as an assignment.
+                </p>
+                <a class="float-right" href="#topmenu">Top</a>
+              </div>
+            </footer>
+          </section>
+    </div>  

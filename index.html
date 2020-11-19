@@ -1,28 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<title>Suzan Ozkilic</title>
+<!--Linking font awesome to the framework-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Adding ubuntu google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- We want to use external file
+We need to import that path to index.html -->
+<link rel="stylesheet" href="bootstrap.css">
+<!-- When I use same bootstrap class name in my-style.css
+It will overwrite bottstap class
+This make us modify the bootstrap classes -->
+<link rel="stylesheet" href="style.css">
 
-    <title>Hello!</title>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+<script src="bootstrap.js"></script>
+<script>
+    function myFunction() {
+      var myWindow = window.open("about.html", "_self");
+      
+    }
+    </script>
+</head>
+<body class="body bg-yellow ">
     
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
-  <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+    <div class="container text-light top-part-space">
+          <section id="topmenu">
+        <nav class="navbar navbar-expand-lg navbar-light right-to-left-gradient">
+                    <a class="navbar-brand" href="#">Suzan Ozkilic</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a onclick="myFunction()">About</a>
+                            
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#reach">Reach</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                      </div>
+                    </div>
+        </nav>
+ 
+  </section>
+  </div>
+<section id="about">
+    <div class="container text-dark text-center right-to-left-gradient"> 
+        <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                  <img  class = "img-me " src="https://cdn.glitch.com/91d5c4f2-da22-4717-a174-7e7e8fd64ad4%2Fme-bio.jpg?v=1605808882028" alt="">
+                
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1>About Me</h1>
+                    <p> I am an MIT master trainer in mobile education and write computer lesson extensions for a company besides teaching.<br><br> I learned programming in 1996. First programs I’ve learned were Basic and Pascal. I love computers, mostly programming. I have two little daughters and a great husband who is also an educator.
+                     <br><br>I teach because I want to prepare young brains for the future’s technology world. I also want to inspire them as a computer scientist.</p>
+                </div> 
+        </div>
+        </div>
+    </section>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <section id="hobbies">
+        <div class="container text-dark text-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 bg-cream">
+                <h1>My Hobbies</h1>
+                <p> There are two activities that I am fond of, biking and planting. 
+                    My mother is my first planting teacher, and she was excellent at planting. 
+                    Planting is a meditative  activity and embracing it has greatly enhanced my levels 
+                    of concentration. <br><br>I also love biking with my family besides planting. 
+                    Through them, I achieve balance and I thoroughly enjoy my 'family time'.</p>
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-12 l-padding">
+                <img  class = "img-me " src="https://cdn.glitch.com/91d5c4f2-da22-4717-a174-7e7e8fd64ad4%2Fbike-with-flowers.jpg?v=1605808922857" alt="">
+              
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container text-dark text-center right-to-left-gradient"> 
+            <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                      <img  class = "img-me " src="https://cdn.glitch.com/91d5c4f2-da22-4717-a174-7e7e8fd64ad4%2Fskills.jpg?v=1605808894484" alt="">
+                    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1>My Skills</h1>
+                        <p> I am an MIT master trainer in mobile education and write computer lesson extensions for a company besides teaching.<br><br> I learned programming in 1996. First programs I’ve learned were Basic and Pascal. I love computers, mostly programming. I have two little daughters and a great husband who is also an educator.
+                         <br><br>I teach because I want to prepare young brains for the future’s technology world. I also want to inspire them as a computer scientist.</p>
+                    </div> 
+            </div>
+            </div>
+
+    </section>
+  
+    <section id="reach">
+        <div class="container text-dark text-center">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 bg-cream">
+                    <h1 class="mt-2">Contact Me</h1>
+                    <p class="mt-5"> <i class="fas fa-phone fa-lg"></i>    (123)456-7891<br>
+                        <i class="far fa-envelope fa-lg"></i> suzandalgic@gmail.com </p>
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-12 l-padding">
+                    <img  class = "img-me " src="https://cdn.glitch.com/91d5c4f2-da22-4717-a174-7e7e8fd64ad4%2Fcontact-me.jpg?v=1605808914815" alt="">
+                  
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+    <section id="footer">
+        <footer class="text-muted top-buttom-45px-space">
+          <div class="container-fluid ml-1 ">
+            <p class="float-left ">
+              2020- This page is designed by Susan Ozkilic for TechProEducation
+              bootcamp as an assignment.
+            </p>
+            <a class="float-right" href="#topmenu">Top</a>
+          </div>
+        </footer>
+      </section>
+  
+  
   </body>
 </html>

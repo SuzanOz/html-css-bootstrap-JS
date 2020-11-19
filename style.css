@@ -1,11 +1,97 @@
-/* CSS files add styling rules to your content */
-
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+.bg-yellow{
+    background-color: #F0B731;
+}
+.bg-cream{
+    background-color: #EDE8CE
+}
+.right-to-left-gradient{
+    background-image: -webkit-linear-gradient(right, #EDE8CE 0%, #EDE8CE 50%, #F0B731 100%);
+}
+/* spacing 2% top and buttom, 5 %left and right */
+.top-part-space{
+    padding: 2% 5%;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+.img-me{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    display: block;
+    float: right;
+    }
+.img-me:hover{
+    opacity: 1;
+}
+
+.nav-radius{
+    border-radius: 1rem;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* media is used to run certain styles for certain screen sizes
+Style image when screen size is 768 or more */
+@media(min-width: 768px){
+    .image{
+        margin-top: 30px;
+        width: 80%;
+        transform: rotate(25deg);
+    }
+}
+/*screen size is 767 or less */
+@media(max-width: 768px){
+    .image{
+        margin-top: 30px;
+        width: 80%;
+    }
+}
+/*screen size is 1024 or more */
+@media(min-width: 1024px){
+    .r-l-padding{
+        padding: 5% 15%;
+    
+    }
+}
+.slogan{
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 10%;
+}
+.fas{
+    color: #FFD167;
+}
+
+.r-l-padding{
+    padding: 5% 15%;
+
+}
+.r-padding{
+    padding: 0%;
+}
+.l-padding{
+    padding: 0%;
+}
+
+/* We can use relative path to style specific elements
+We need to be careful when using existing non unique values
+In CSS class is recomended to use*/
+.pricing .col-lg-4{
+    margin-top: 5%;
+}
+.top-buttom-45px-space{
+    padding: 45px 0;
+}
+.comment{
+    padding: 3% 15%;
+}
+/* class os comments, tag of p*/
+.comment p{
+    font-size: 1.5rem;
+}
+
+.comment img{
+  width: 15%;   
 }
